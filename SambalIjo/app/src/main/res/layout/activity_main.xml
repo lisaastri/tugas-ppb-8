@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM. Sambal Ijo"
+        android:textSize="35dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        android:src="@drawable/images"
+        />
+<TextView android:id="@+id/text1"
+    app:layout_constraintTop_toBottomOf="@id/image1"
+    android:layout_marginLeft="100dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <Spinner android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></Spinner>
+
+    <TextView android:id="@+id/hargaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga : "
+        app:layout_constraintTop_toBottomOf="@id/spinner1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView android:id="@+id/ayambakar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayam Bakar"
+        app:layout_constraintTop_toBottomOf="@id/hargaa"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView android:id="@+id/txtharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinner1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView android:id="@+id/hargaayambakar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Rp. 15.000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtharga" />
+
+    <TextView android:id="@+id/ayamgoreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayam Goreng"
+        app:layout_constraintTop_toBottomOf="@id/ayambakar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/hargaayamgor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Rp. 13.000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hargaayambakar" />
+
+    <TextView android:id="@+id/bebekbakar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bebek Bakar"
+        app:layout_constraintTop_toBottomOf="@id/ayamgoreng"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView android:id="@+id/hargabebekgor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Rp. 18.000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hargaayamgor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bebek Goreng"
+        app:layout_constraintTop_toBottomOf="@id/bebekbakar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Rp. 17.000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hargabebekgor" />
+
+<Button android:id="@+id/button1"
+    android:text="Pesan"
+    android:layout_marginBottom="50dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginRight="30dp"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="btnClik"
+    />
+</android.support.constraint.ConstraintLayout>

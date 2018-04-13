@@ -1,0 +1,11 @@
+<resources>
+    <string name="RM">RM Sambal Ijo</string>
+    <string name="app_name">SambalIjo</string>
+    <string-array name="Menu_array">
+        <item>Pilih Menu : </item>
+        <item>Ayam Bakar</item>,
+        <item>Ayam Goreng</item>,
+        <item>Bebek Bakar</item>,
+        <item>Bebek Goreng</item>
+    </string-array>
+</resources>

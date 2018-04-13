@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView android:id="@+id/judul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDENTITAS PEMESAN : "
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/colorAccent" />
+
+    <TextView android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/judul2"
+        android:layout_marginTop="40dp"
+        android:text=" Nama Lengkap :"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText android:id="@+id/e1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/nama"
+        android:layout_marginLeft="110dp"
+        app:layout_constraintTop_toBottomOf="@id/judul2"
+        android:layout_marginTop="20dp" />
+
+    <TextView android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nama"
+        android:layout_marginTop="20dp"
+        android:text="Alamat Lengkap : "
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText android:id="@+id/e2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/alamat"
+        android:layout_marginLeft="110dp"
+        app:layout_constraintTop_toBottomOf="@id/e1"
+        />
+
+    <TextView android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/alamat"
+        android:layout_marginTop="20dp"
+        android:text="Waktu pengiriman :"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/e2"
+        app:layout_constraintLeft_toLeftOf="@id/waktu"
+        android:layout_marginLeft="130dp"
+        android:text="Tanggal"
+        android:onClick="btndate"/>
+
+    <Button android:id="@+id/jam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/e2"
+        app:layout_constraintLeft_toLeftOf="@id/waktu"
+        android:layout_marginLeft="240dp"
+        android:text="Jam"
+        android:onClick="btntime"/>
+
+    <Button android:id="@+id/button1"
+        android:text="Simpan"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+</android.support.constraint.ConstraintLayout>
